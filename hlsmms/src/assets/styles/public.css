@@ -1,0 +1,165 @@
+/* 公共样式 */
+body {
+    font-size: 14px;
+}
+
+/* a标签默认样式 */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* --------------------------------------------左侧--------------------------------------------- */
+/* 左侧栏 */
+.el-aside {
+    color: #333;
+    background: url("../images/leftBG.png") repeat-y;
+    height: 808px;
+}
+
+/* 菜单 */
+.el-menu {
+    background-color: transparent;
+    border: none;
+    width: 206px;
+    margin-left: 24px;
+}
+
+/* 子菜单 */
+.el-menu--inline {
+    margin-left: 0px;
+}
+
+/* 子菜单的行高和高度 */
+.el-submenu .el-menu-item {
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px 0px 0px 5px;
+    text-align: right;
+    padding: 0px 20px;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+
+
+/* 鼠标经过和焦点样式 */
+.el-menu-item:hover,
+.el-menu-item:focus {
+    background-color: rgb(126, 228, 74, 0.3);
+    ;
+}
+
+/* 激活的样式 */
+.el-menu-item.is-active {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgba(243, 226, 162, 0.3);
+}
+
+/* 标题 */
+.el-submenu__title {
+    color: #fff;
+    background: url("../images/menuBG.png") repeat-x;
+    height: 33px;
+    line-height: 33px;
+    text-align: right;
+    margin: 0 0 10px 0;
+    border-radius: 5px 0px 0px 5px;
+}
+
+/* 箭头 */
+.el-submenu__icon-arrow {
+    display: none;
+}
+
+/* 左侧的自定义样式 */
+#leftTitle {
+    color: #fff;
+}
+
+#leftTitle h1,
+#leftTitle p {
+    text-align: right;
+    padding-right: 20px;
+}
+
+#leftTitle h1 {
+    font-size: 22px;
+    font-family: "黑体";
+}
+
+/* --------------------------------------------右侧--------------------------------------------- */
+
+.el-header,
+.el-footer {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.el-header h1 {
+    font-size: 22px;
+    margin: 0px;
+    color: #000;
+}
+
+.el-footer p {
+    line-height: 50px;
+    border-top: 1px solid #ccc;
+    margin: 0px;
+}
+
+/* 中间样式 */
+/* .el-main {
+    background-color: #e9eef3;
+    color: #333;
+    text-align: center;
+    line-height: 160px;
+} */
+.el-main {
+    border: 1px solid #ccc;
+}
+
+.el-main .el-card__header {
+    /* 渐变颜色： 默认从上到下的渐变，两个颜色上面和下面，后期CSS3会学习 */
+    background: linear-gradient(#fff, #e5e5e5);
+    height: 40px;
+    line-height: 40px;
+}
+
+/* 消息提示框 */
+.el-alert--success {
+    background-color: #f0f9eb;
+    color: #67c23a;
+    margin: 0px 2px 18px 0;
+}
+
+.el-alert--info {
+    background-color: #f4f4f5;
+    color: #909399;
+    margin: 0 0 18px 0;
+}
+
+/* 解决横向布局错误 */
+/* flex伸缩布局 */
+#buju {
+    display: flex;
+    /* 开启伸缩布局 */
+    flex-wrap: wrap;
+    /* 开启换行 */
+}
+
+/* 三个子元素（上，中，下）的宽度为100% */
+#buju>* {
+    width: 100%;
+}
+
+/* 修改表单元素的默认宽度100% */
+.el-input {
+    width: 30%;
+}
+
+/* 把下拉列表恢复为100% */
+.el-input--suffix {
+    width: 100%;
+}
